@@ -135,3 +135,22 @@
   <script src="scripts.js"></script>
 </body>
 </html>
+
+{
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "${input:serverUrl}",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "serverUrl",
+      "description": "Enter the URL where your app is running (e.g., http://localhost:8080)"
+    }
+  ]
+}
